@@ -1,13 +1,11 @@
 <template>
-  <div>
-    <button class="btn-mini">
-      <slot></slot>
-    </button>
-  </div>
+  <button class="btn-mini">
+    <slot></slot>
+  </button>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from "vue";
+import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "ButtonMini",

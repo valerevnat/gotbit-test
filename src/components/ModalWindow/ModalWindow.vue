@@ -1,15 +1,7 @@
 <template>
   <div class="modal-window" v-if="show" @click="hideModal">
     <div class="modal-content">
-      <div class="modal-content-title">
-        <slot name="title"></slot>
-      </div>
-      <div class="modal-content-subtitle">
-        <slot name="subtitle"></slot>
-      </div>
-      <div class="modal-content-content">
-        <slot name="content"></slot>
-      </div>
+      <slot></slot>
     </div>
   </div>
 </template>
@@ -61,19 +53,6 @@ export default defineComponent({
     justify-content: center;
     align-items: center;
     padding: 28px;
-    &-title {
-      font-weight: 700;
-      font-size: 32px;
-      color: #191a1b;
-    }
-    &-subtitle {
-      font-weight: 400;
-      font-size: 16px;
-      color: #58595c;
-    }
-    &-content {
-      margin-top: 32px;
-    }
   }
 }
 </style>

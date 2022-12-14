@@ -5,15 +5,13 @@
       <div class="navbar-logo-circle"></div>
       <div class="navbar-logo-title">staking PLATFORM</div>
     </div>
-    <ButtonMini>
-      <div>Connect wallet</div>
-    </ButtonMini>
+    <ButtonMini> Connect wallet </ButtonMini>
   </div>
 </template>
 
 <script lang="ts">
 // import { computed, defineComponent, ref } from "vue";
-import { defineComponent, ref } from "vue";
+import { defineComponent } from "vue";
 import ButtonMini from "../Buttons/ButtonMini/ButtonMini.vue";
 
 export default defineComponent({

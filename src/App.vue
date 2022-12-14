@@ -4,7 +4,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from "vue";
+import { defineComponent } from "vue";
 import Navigation from "./components/Navigation/Navigation.vue";
 import ContainerComponent from "./components/Container/Container.vue";
 // import ModalWindow from "./components/ModalWindow/ModalWindow.vue";

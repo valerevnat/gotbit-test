@@ -1,19 +1,18 @@
 <template>
   <div>
-    <button class="btn-modal">{{ content }}</button>
+    <button class="btn-modal">
+      <slot></slot>
+    </button>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from "vue";
+import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "ButtonsMain",
   setup() {
-    const content = ref<string>("Connect wallet");
-    return {
-      content,
-    };
+    return {};
   },
 });
 </script>

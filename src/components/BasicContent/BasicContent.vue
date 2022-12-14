@@ -39,7 +39,7 @@
       <img src="../../resorces/img/basic-main-screen.png" alt="help" />
     </div>
     <div class="basic-content-btn">
-      <ButtonsMain @click="handlerShow" />
+      <ButtonsMain @click="handlerShow"> Connect wallet </ButtonsMain>
     </div>
   </div>
 </template>
