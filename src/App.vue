@@ -1,27 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <Navigation />
+  <ContainerComponent />
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import { defineComponent, ref } from "vue";
+import Navigation from "./components/Navigation/Navigation.vue";
+import ContainerComponent from "./components/Container/Container.vue";
+// import ModalWindow from "./components/ModalWindow/ModalWindow.vue";
 
 export default defineComponent({
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
+    Navigation,
+    ContainerComponent,
+    // ModalWindow,
+  },
+
+  // setup() {
+  //   const hideWindow = ref<boolean>(false);
+
+  //   const handlerShowModal = () => {
+  //     hideWindow.value = !hideWindow.value;
+  //   };
+
+  //   return {
+  //     hideWindow,
+  //     handlerShowModal,
+  //   };
+  // },
 });
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
